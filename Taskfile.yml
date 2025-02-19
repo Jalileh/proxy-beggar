@@ -1,0 +1,22 @@
+version: '3.0'
+
+tasks:
+  build:
+    desc: "Build Executable"
+    cmds:
+    - pkg main.js --output ppipe.exe
+  test:
+    desc: "Run tests"
+    cmds:
+      - echo "Running tests..."
+      - ./test.sh
+
+  clean:
+    desc: "Clean up"
+    cmds:
+      - echo "Cleaning up..."
+      - rm -f myapp
+
+  all:
+    desc: "Build, test, and clean the project"
+    deps: [build, test, clean]
