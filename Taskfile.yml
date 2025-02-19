@@ -4,7 +4,7 @@ tasks:
   build:
     desc: "Build Executable"
     cmds:
-    - pkg main.js --output ppipe.exe
+      - npx pkg bin/main-bundle.js --output ppipe.exe --targets node14-win-x64
   test:
     desc: "Run tests"
     cmds:
