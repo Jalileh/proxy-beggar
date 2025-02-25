@@ -1,16 +1,12 @@
 class _ProxyObj {
 	ip: string;
-	ms: number;
-	meta: {};
+	ms: number
+	meta: { [key: string]: any };
 	groupId: string;
 
-
 	constructor() {
-		(this.ip = ""), (this.ms = -1);
-		(this.meta = {}), (this.groupId = "none");
-		this.meta = { unstableCount: 0 };
-
-
+		this.ip = "", this.ms = -1;
+		(this.meta = {}); (this.groupId = "none");
 	}
 }
 

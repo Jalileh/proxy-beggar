@@ -1,11 +1,10 @@
 import { Builder, Options } from "selenium-webdriver";
 import chrome from "selenium-webdriver/chrome.js";
+import { _ProxyObj } from "../core/defines";
 
 
 
 const LOCALHOST_SENDPROXIES = () => {
-
-
 }
 
 
